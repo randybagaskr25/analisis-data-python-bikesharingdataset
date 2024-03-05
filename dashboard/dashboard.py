@@ -8,7 +8,7 @@ def load_data(file_path):
     return pd.read_csv(file_path)
 
 # Proses pemuatan data
-daysbd_df = load_data("day.csv")
+daysbd_df = load_data("dashboard/day.csv")
 
 # Mengubah kolom datetime menjadi tipe datetime
 daysbd_df['datetime'] = pd.to_datetime(daysbd_df['dteday'])
